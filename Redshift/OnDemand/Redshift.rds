@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Redshift">
+  <ConnectionProperties>
+    <Extension>ODBC</Extension>
+    <ConnectString>DSN=Redshift</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>18aa4a13-5469-402b-b2d7-48fdee307f67</DataSourceID>
+</RptDataSource>

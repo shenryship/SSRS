@@ -4,17 +4,9 @@
     <Query>
       <DataSourceReference>Redshift</DataSourceReference>
       <CommandText>Select
-  trunc(date_trunc('month', add_months(current_date, -1))) AS FirstDayOfPreviousMonth
-, trunc(date_trunc('month', current_date)-1) AS LastDayOfPreviousMonth
-, trunc(date_trunc('year', current_date)) AS FirstDayOfCurrentYear
-, trunc(date_trunc('month', current_date)) AS FirstDayOfCurrentMonth
-, to_char(to_date(current_date, 'YYYY-MM'), 'MONTH DD, YYYY') AS MonthDayYearOfCurrentMonth  
-, to_char(to_date(current_date, 'YYYY-MM'), 'MONTH YYYY') AS MonthYearOfCurrentMonth
-, to_char(trunc(date_trunc('month', add_months(current_date, -1))), 'MON DD YYYY') AS MonthDayYearOfPreviousMonth
-, to_char(trunc(date_trunc('month', add_months(current_date, -1))), 'MONTH YYYY') AS MonthYearOfPreviousMonth
-, trunc(date_trunc('quarter', current_date)) AS FirstDayOfCurrentQuarter
-, trunc(date_trunc('quarter', add_months(current_date, -3))) AS FirstDayOfPreviousQuarter
-</CommandText>
+ *
+From
+vFirstLastOfDatePeriods</CommandText>
     </Query>
     <Fields>
       <Field Name="firstdayofpreviousmonth">

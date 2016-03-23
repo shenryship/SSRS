@@ -12,6 +12,10 @@
       <Name>FirstLastOfDatePeriods.rsd</Name>
       <FullPath>FirstLastOfDatePeriods.rsd</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>DatePeriods.rsd</Name>
+      <FullPath>DatePeriods.rsd</FullPath>
+    </ProjectItem>
   </DataSets>
   <Reports>
     <ProjectItem>
@@ -33,6 +37,10 @@
     <ProjectItem>
       <Name>IMEX.rdl</Name>
       <FullPath>IMEX.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>First Mile Revenue Share.rdl</Name>
+      <FullPath>First Mile Revenue Share.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>

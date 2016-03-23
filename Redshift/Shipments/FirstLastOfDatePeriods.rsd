@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <DataSet Name="">
+    <Query>
+      <DataSourceReference>Redshift</DataSourceReference>
+      <CommandText>Select
+ *
+From
+vFirstLastOfDatePeriods</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="firstdayofpreviousmonth">
+        <DataField>firstdayofpreviousmonth</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="lastdayofpreviousmonth">
+        <DataField>lastdayofpreviousmonth</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="firstdayofcurrentyear">
+        <DataField>firstdayofcurrentyear</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="firstdayofcurrentmonth">
+        <DataField>firstdayofcurrentmonth</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="monthdayyearofcurrentmonth">
+        <DataField>monthdayyearofcurrentmonth</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="monthyearofcurrentmonth">
+        <DataField>monthyearofcurrentmonth</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="monthdayyearofpreviousmonth">
+        <DataField>monthdayyearofpreviousmonth</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="firstdayofcurrentquarter">
+        <DataField>firstdayofcurrentquarter</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="monthyearofpreviousmonth">
+        <DataField>monthyearofpreviousmonth</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="firstdayofpreviousquarter">
+        <DataField>firstdayofpreviousquarter</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>

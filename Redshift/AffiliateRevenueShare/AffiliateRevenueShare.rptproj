@@ -12,19 +12,23 @@
       <Name>FirstLastOfDatePeriods.rsd</Name>
       <FullPath>FirstLastOfDatePeriods.rsd</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>DatePeriods.rsd</Name>
+      <FullPath>DatePeriods.rsd</FullPath>
+    </ProjectItem>
   </DataSets>
   <Reports>
     <ProjectItem>
-      <Name>BigCommerce.rdl</Name>
-      <FullPath>BigCommerce.rdl</FullPath>
+      <Name>Big Commerce Revenue Share.rdl</Name>
+      <FullPath>Big Commerce Revenue Share.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Volusion.rdl</Name>
-      <FullPath>Volusion.rdl</FullPath>
+      <Name>Shopify Revenue Share.rdl</Name>
+      <FullPath>Shopify Revenue Share.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Shopify.rdl</Name>
-      <FullPath>Shopify.rdl</FullPath>
+      <Name>Volusion Revenue Share.rdl</Name>
+      <FullPath>Volusion Revenue Share.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
@@ -35,7 +39,7 @@
         <OutputPath>bin\Debug</OutputPath>
         <TargetServerVersion>SSRS2008R2</TargetServerVersion>
         <TargetServerURL>http://reports.sslocal.com/reportserver</TargetServerURL>
-        <TargetFolder>Accounting/RevenueShare</TargetFolder>
+        <TargetFolder>Accounting/AffiliateRevenueShare</TargetFolder>
         <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
         <TargetDatasetFolder>Datasets/Common</TargetDatasetFolder>
         <OverwriteDatasets>true</OverwriteDatasets>

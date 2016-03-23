@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition">
+  <DataSet Name="">
+    <Query>
+      <DataSourceReference>Redshift</DataSourceReference>
+      <CommandText>Select * From vdateperiods</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="currentmonthbegindate">
+        <DataField>currentmonthbegindate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="currentmonthenddate">
+        <DataField>currentmonthenddate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="previousmonthbegindate">
+        <DataField>previousmonthbegindate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="previousmonthenddate">
+        <DataField>previousmonthenddate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="currentyearbegindate">
+        <DataField>currentyearbegindate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="currentyearenddate">
+        <DataField>currentyearenddate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="currentquarterbegindate">
+        <DataField>currentquarterbegindate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="currentquarterenddate">
+        <DataField>currentquarterenddate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="previousquarterbegindate">
+        <DataField>previousquarterbegindate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="previousquarterenddate">
+        <DataField>previousquarterenddate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="firstdayofpreviousmonth_monddyyyy">
+        <DataField>firstdayofpreviousmonth_monddyyyy</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="firstdayofpreviousmonth_monthddyyyy">
+        <DataField>firstdayofpreviousmonth_monthddyyyy</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="firstdayofcurrentmonth_yyyymmdd">
+        <DataField>firstdayofcurrentmonth_yyyymmdd</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="firstdayofcurrentmonth_monddyyyy">
+        <DataField>firstdayofcurrentmonth_monddyyyy</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="firstdayofcurrentmonth_monthddyyyy">
+        <DataField>firstdayofcurrentmonth_monthddyyyy</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="currentmonth_monthyyyy">
+        <DataField>currentmonth_monthyyyy</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="previousmonth_monthyyyy">
+        <DataField>previousmonth_monthyyyy</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="previousmonth_monyy">
+        <DataField>previousmonth_monyy</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="firstdayofcurrentyear_yyyymmdd">
+        <DataField>firstdayofcurrentyear_yyyymmdd</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="firstdayofcurrentquarter_yyyymmdd">
+        <DataField>firstdayofcurrentquarter_yyyymmdd</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="firstdayofpreviousquarter_yyyymmdd">
+        <DataField>firstdayofpreviousquarter_yyyymmdd</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="currentquarter_nqtryy">
+        <DataField>currentquarter_nqtryy</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="previousquarter_nqtryy">
+        <DataField>previousquarter_nqtryy</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
