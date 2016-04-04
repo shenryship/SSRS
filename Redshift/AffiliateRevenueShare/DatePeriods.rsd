@@ -50,6 +50,14 @@
         <DataField>firstdayofpreviousmonth_monddyyyy</DataField>
         <rd:TypeName>System.String</rd:TypeName>
       </Field>
+      <Field Name="previousdaydate">
+        <DataField>previousdaydate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="previousdaymonthbegindate">
+        <DataField>previousdaymonthbegindate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
       <Field Name="firstdayofpreviousmonth_monthddyyyy">
         <DataField>firstdayofpreviousmonth_monthddyyyy</DataField>
         <rd:TypeName>System.String</rd:TypeName>

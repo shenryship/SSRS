@@ -6,6 +6,10 @@
       <Name>Redshift.rds</Name>
       <FullPath>Redshift.rds</FullPath>
     </ProjectItem>
+    <ProjectItem>
+      <Name>ss-b.rds</Name>
+      <FullPath>ss-b.rds</FullPath>
+    </ProjectItem>
   </DataSources>
   <DataSets>
     <ProjectItem>
@@ -14,6 +18,10 @@
     </ProjectItem>
   </DataSets>
   <Reports>
+    <ProjectItem>
+      <Name>Shipping Volume.rdl</Name>
+      <FullPath>Shipping Volume.rdl</FullPath>
+    </ProjectItem>
     <ProjectItem>
       <Name>Subscriptions.rdl</Name>
       <FullPath>Subscriptions.rdl</FullPath>
@@ -27,8 +35,16 @@
       <FullPath>USPS Expedited Stats.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
-      <Name>Shipping Volume.rdl</Name>
-      <FullPath>Shipping Volume.rdl</FullPath>
+      <Name>PC Postage Stats.rdl</Name>
+      <FullPath>PC Postage Stats.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Top Customers.rdl</Name>
+      <FullPath>Top Customers.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Environment Overview.rdl</Name>
+      <FullPath>Environment Overview.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>

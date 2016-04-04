@@ -143,7 +143,7 @@
                 </Parameters>
                 <Top>0.08333in</Top>
                 <Height>1.19792in</Height>
-                <Width>10.93748in</Width>
+                <Width>11.79165in</Width>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -160,7 +160,7 @@
             <Top>0.01389in</Top>
             <Left>0.04042in</Left>
             <Height>1.36458in</Height>
-            <Width>10.93748in</Width>
+            <Width>11.91665in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -178,7 +178,7 @@
                   </Parameter>
                 </Parameters>
                 <Height>1.48958in</Height>
-                <Width>10.93748in</Width>
+                <Width>11.79165in</Width>
                 <Style>
                   <Border>
                     <Style>None</Style>
@@ -194,7 +194,7 @@
             <Top>1.35417in</Top>
             <Left>0.04042in</Left>
             <Height>1.48958in</Height>
-            <Width>10.93748in</Width>
+            <Width>11.91665in</Width>
             <ZIndex>2</ZIndex>
             <Style>
               <Border>
@@ -206,7 +206,7 @@
         <Height>2.90313in</Height>
         <Style />
       </Body>
-      <Width>11.09248in</Width>
+      <Width>12.06123in</Width>
       <Page>
         <PageHeader>
           <Height>0.46056in</Height>
@@ -217,7 +217,8 @@
               <Source>Embedded</Source>
               <Value>Logo</Value>
               <Sizing>FitProportional</Sizing>
-              <Left>9.52477in</Left>
+              <Top>0.00458in</Top>
+              <Left>10.38936in</Left>
               <Height>0.35417in</Height>
               <Width>1.44271in</Width>
               <Style>
@@ -229,7 +230,7 @@
             <Line Name="Line3">
               <Top>0.42819in</Top>
               <Height>0in</Height>
-              <Width>10.96758in</Width>
+              <Width>11.95707in</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>
@@ -322,7 +323,7 @@
               <Top>0.02969in</Top>
               <Left>0.01038in</Left>
               <Height>0in</Height>
-              <Width>10.96758in</Width>
+              <Width>11.94669in</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>

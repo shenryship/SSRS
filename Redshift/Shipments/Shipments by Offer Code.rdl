@@ -124,7 +124,7 @@
             <Value>=Parameters!PreviousDayDate.Value</Value>
           </QueryParameter>
         </QueryParameters>
-        <CommandText>select s.SellerID, s.CompanyName, s.CouponCode, s.ReferralCode, s.CreateDate, s.CancelDate, s.BillingPlanID, bp.Name, 
+        <CommandText>select s.HomeCountry, s.SellerID, s.CompanyName, s.CouponCode, s.ReferralCode, s.CreateDate, s.CancelDate, s.BillingPlanID, bp.Name, 
 	Sum(case when ISNULL(voided, true)=1 then 0 else 1 end) as TotalShipments, 
 	Sum(case when ISNULL(voided, true)=1 then 0 else CarrierFee end) as CarrierFees
 from Seller s
@@ -135,10 +135,14 @@ where
 	 s.ExcludeReasonID is null 
 	and trunc(s.createDate) &lt;= ?
 	AND s.couponcode is not null
-group by s.SellerID, s.CompanyName, s.CouponCode, s.ReferralCode, s.CreateDate, s.CancelDate, s.BillingPlanID, bp.Name
+group by s.HomeCountry, s.SellerID, s.CompanyName, s.CouponCode, s.ReferralCode, s.CreateDate, s.CancelDate, s.BillingPlanID, bp.Name
 order by s.CreateDate desc</CommandText>
       </Query>
       <Fields>
+        <Field Name="homecountry">
+          <DataField>homecountry</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="sellerid">
           <DataField>sellerid</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
@@ -225,6 +229,9 @@ order by s.CreateDate desc</CommandText>
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
+                  <Width>0.72221in</Width>
+                </TablixColumn>
+                <TablixColumn>
                   <Width>0.78825in</Width>
                 </TablixColumn>
                 <TablixColumn>
@@ -259,6 +266,41 @@ order by s.CreateDate desc</CommandText>
                 <TablixRow>
                   <Height>0.47916in</Height>
                   <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox4">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Seller Country</Value>
+                                  <Style>
+                                    <FontFamily>Tahoma</FontFamily>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox4</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>Silver</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="txtCol1">
@@ -625,6 +667,40 @@ order by s.CreateDate desc</CommandText>
                 <TablixRow>
                   <Height>0.30208in</Height>
                   <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="homecountry">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!homecountry.Value</Value>
+                                  <Style>
+                                    <FontFamily>Tahoma</FontFamily>
+                                    <FontWeight>Bold</FontWeight>
+                                    <Color>DimGray</Color>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>homecountry</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
                     <TablixCell>
                       <CellContents>
                         <Textbox Name="sellerid">
@@ -996,6 +1072,7 @@ order by s.CreateDate desc</CommandText>
                 <TablixMember />
                 <TablixMember />
                 <TablixMember />
+                <TablixMember />
               </TablixMembers>
             </TablixColumnHierarchy>
             <TablixRowHierarchy>
@@ -1014,7 +1091,7 @@ order by s.CreateDate desc</CommandText>
             <Top>0.3675in</Top>
             <Left>0.03in</Left>
             <Height>0.78124in</Height>
-            <Width>11.47913in</Width>
+            <Width>12.20134in</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -1039,7 +1116,7 @@ order by s.CreateDate desc</CommandText>
         <Height>1.24459in</Height>
         <Style />
       </Body>
-      <Width>11.50915in</Width>
+      <Width>12.50913in</Width>
       <Page>
         <PageHeader>
           <Height>0.45014in</Height>
@@ -1050,8 +1127,8 @@ order by s.CreateDate desc</CommandText>
               <Source>Embedded</Source>
               <Value>Logo</Value>
               <Sizing>FitProportional</Sizing>
-              <Top>0.03235in</Top>
-              <Left>10.02894in</Left>
+              <Top>0.04041in</Top>
+              <Left>10.78863in</Left>
               <Height>0.35417in</Height>
               <Width>1.44271in</Width>
               <Style>
@@ -1063,7 +1140,7 @@ order by s.CreateDate desc</CommandText>
             <Line Name="Line3">
               <Top>0.42819in</Top>
               <Height>0in</Height>
-              <Width>11.50915in</Width>
+              <Width>12.23134in</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>
@@ -1156,7 +1233,7 @@ order by s.CreateDate desc</CommandText>
               <Top>0.02969in</Top>
               <Left>0.01038in</Left>
               <Height>0in</Height>
-              <Width>11.49877in</Width>
+              <Width>12.22096in</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>

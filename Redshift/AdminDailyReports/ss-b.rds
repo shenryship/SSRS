@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="ss-b">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=s-b-db01.sslocal.com;Failover Partner=s-b-db02.sslocal.com;Initial Catalog=ShipStation;TrustServerCertificate=True;Authentication="Sql Password"</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>515baa59-622d-4057-9f30-6c569169209f</DataSourceID>
+</RptDataSource>

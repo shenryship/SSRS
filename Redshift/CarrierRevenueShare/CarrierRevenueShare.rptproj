@@ -9,12 +9,12 @@
   </DataSources>
   <DataSets>
     <ProjectItem>
-      <Name>FirstLastOfDatePeriods.rsd</Name>
-      <FullPath>FirstLastOfDatePeriods.rsd</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>DatePeriods.rsd</Name>
       <FullPath>DatePeriods.rsd</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>FirstLastOfDatePeriods.rsd</Name>
+      <FullPath>FirstLastOfDatePeriods.rsd</FullPath>
     </ProjectItem>
   </DataSets>
   <Reports>
@@ -31,16 +31,16 @@
       <FullPath>Asendia.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
+      <Name>First Mile SS Revenue Share.rdl</Name>
+      <FullPath>First Mile SS Revenue Share.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
       <Name>Globegistics.rdl</Name>
       <FullPath>Globegistics.rdl</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>IMEX.rdl</Name>
       <FullPath>IMEX.rdl</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>First Mile Revenue Share.rdl</Name>
-      <FullPath>First Mile Revenue Share.rdl</FullPath>
     </ProjectItem>
   </Reports>
   <Configurations>
